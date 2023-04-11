@@ -3,7 +3,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 // import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
-// import { BlobGeometry } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/BlobGeometry.js";
+import { RigidBody, Physics } from "@react-three/rapier";
 
 function Page4() {
   const { height, width } = useThree((state) => state.viewport);
@@ -15,9 +15,19 @@ function Page4() {
         position={[0, -height * 2.25, 5]}
         intensity={20}
       />
-      <Item color="green" position={[width / 6, -height * 3.5, 0]}>
-        <boxGeometry args={[20, 5, 2]} />
-      </Item>
+      <Physics>
+        <RigidBody type="fixed" restitution={0} friction={0.7}>
+          <Item color="green" position={[width / 6, -height * 3.5, 0]}>
+            <boxGeometry args={[20, 5, 2]} />
+          </Item>
+        </RigidBody>
+
+        <RigidBody>
+          <Item color="red" position={[width / 6, -height * 2.5, 0]}>
+            <boxGeometry args={[0.5, 0.5, 0.5]} />
+          </Item>
+        </RigidBody>
+      </Physics>
     </>
   );
 }
