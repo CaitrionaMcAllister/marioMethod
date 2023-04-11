@@ -1,3 +1,37 @@
+Title: Botanical Breakthroughs
+Creator: Caitriona McAllister
+Course: UAL (LCC) Graphic and Media Design with Creative Computing
+ID: 19011624
+Project: SDP
+Focus: Creative, interactive web development in 3D
+
+About Botanical Breakthroughs:
+-what
+-why
+-how
+-where (responsove design but focused on web and screen)
+
+Credit & Inspiration:
+Colour Palette: [#4F7942,#4682B4,#191970,#00FF00,#009999]
+
+TO DO:
+
+- add shapes
+- add fixed camera movement (limited rotation, limited zoom in/out)
+  <!-- - add ground at bottom -->
+  <!-- - add basic scroll / layout -->
+- fix shape and scroll glitch
+- add animation
+- add interaction
+- add day and night
+- https://drei.pmnd.rs/?path=/story/staging-sparkles--sparkles-story
+- https://github.com/pmndrs/drei#cloud
+- https://docs.pmnd.rs/react-three-fiber/getting-started/examples
+- https://sbcode.net/threejs/animate-on-scroll/
+- add tags and credit at bottom
+
+About React:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

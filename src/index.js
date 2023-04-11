@@ -1,17 +1,58 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import * as THREE from "three";
+import { Logo } from "@pmndrs/branding";
+// import { Canvas } from "@react-three/fiber";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import "./style.css";
+import ReactDOM from "react-dom/client";
+import App from "./App.js";
+
+function Overlay() {
+  return (
+    <div
+      style={{
+        position: "absolute",
+        top: 0,
+        left: 0,
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <a
+        href="https://pmnd.rs/"
+        style={{ position: "absolute", bottom: 40, left: 90, fontSize: "13px" }}
+      >
+        pmnd.rs
+        <br />
+        dev collective
+      </a>
+      <div
+        style={{ position: "absolute", top: 40, left: 40, fontSize: "13px" }}
+      >
+        C.Mc —
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          bottom: 40,
+          right: 40,
+          fontSize: "13px",
+        }}
+      >
+        07/04/2023
+      </div>
+    </div>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <>
     <App />
-  </React.StrictMode>
+    <Overlay />
+    <Logo
+      style={{ position: "absolute", bottom: 40, left: 40, width: 30 }}
+      color="darkGreen"
+    />
+  </>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
