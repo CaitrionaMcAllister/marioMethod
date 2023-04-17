@@ -4,17 +4,12 @@ import React, { useMemo, useRef } from "react";
 // import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
 import { RigidBody, Physics } from "@react-three/rapier";
+// import { Ground } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/Ground.js";
 
 function Page4() {
   const { height, width } = useThree((state) => state.viewport);
   return (
     <>
-      <pointLight color="#191970" position={[8, -25, 5]} intensity={100} />
-      <pointLight
-        color="#191970"
-        position={[0, -height * 2.25, 5]}
-        intensity={20}
-      />
       <Physics>
         <RigidBody type="fixed" restitution={0} friction={0.7}>
           <Item color="green" position={[width / 6, -height * 3.5, 0]}>

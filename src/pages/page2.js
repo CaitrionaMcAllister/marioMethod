@@ -2,20 +2,16 @@ import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
+import { Mushroom } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/mushroom.js";
 
 function Page2() {
   const { height, width } = useThree((state) => state.viewport);
   // console.log(height, width);
   return (
     <>
-      <pointLight color="#191970" position={[8, -25, 5]} intensity={100} />
-      <pointLight
-        color="#191970"
-        position={[0, -height * 2.25, 5]}
-        intensity={20}
-      />
       <Item color="green" position={[width / 2, -height * 0.9, -1]}>
-        <boxGeometry args={[1, 1, 1]} />
+        {/* <boxGeometry args={[1, 1, 1]} /> */}
+        <Mushroom />
       </Item>
       <Item color="green" position={[width / 6, -height * 1.1, 0]}>
         <boxGeometry args={[1, 1, 1]} />

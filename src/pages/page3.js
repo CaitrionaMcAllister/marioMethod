@@ -7,12 +7,6 @@ function Page3() {
   const { height, width } = useThree((state) => state.viewport);
   return (
     <>
-      <pointLight color="#191970" position={[8, -25, 5]} intensity={100} />
-      <pointLight
-        color="#191970"
-        position={[0, -height * 2.25, 5]}
-        intensity={20}
-      />
       <Item color="green" position={[-width / 5, -height * 2, -2]}>
         {/* <boxGeometry args={[1, 1, 1]} /> */}
       </Item>

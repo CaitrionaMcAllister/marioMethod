@@ -1,19 +1,13 @@
 import { useIntersect } from "@react-three/drei";
-import { useFrame, useThree } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { QuestionBox } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/QuestionBox.js";
 
 function Page1() {
-  const { height } = useThree((state) => state.viewport);
+  // const { height } = useThree((state) => state.viewport);
   return (
     <>
-      {/* <pointLight color="red" position={[8, -25, 5]} intensity={10} />
-      <pointLight
-        color="red"
-        position={[0, -height * 2.25, 5]}
-        intensity={10}
-      /> */}
       <Item position={[0, 0, 0]}>
         <QuestionBox />
       </Item>
