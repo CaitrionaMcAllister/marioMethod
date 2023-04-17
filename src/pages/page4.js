@@ -22,11 +22,29 @@ function Page4() {
           </Item>
         </RigidBody>
 
-        <RigidBody>
-          <Item color="red" position={[width / 6, -height * 2.5, 0]}>
-            <boxGeometry args={[0.5, 0.5, 0.5]} />
+        <RigidBody type="fixed" restitution={0} friction={0.7}>
+          <Item color="green" position={[width / 1.3, -height * 3.4, -1.2]}>
+            <boxGeometry args={[3, 10, 1]} />
+          </Item>
+          <Item color="green" position={[width / 3, -height * 3.5, -1.5]}>
+            <boxGeometry args={[2.8, 10, 1]} />
+          </Item>
+          <Item color="green" position={[width / 9, -height * 3, -1]}>
+            <boxGeometry args={[1, 10, 1]} />
+          </Item>
+          <Item color="green" position={[-width / 5, -height * 3.7, -1.3]}>
+            <boxGeometry args={[3, 10, 1]} />
+          </Item>
+          <Item color="green" position={[-width / 2, -height * 3.4, -1]}>
+            <boxGeometry args={[2, 10, 1]} />
           </Item>
         </RigidBody>
+
+        {/* <RigidBody> */}
+        <Item color="red" position={[width / 6, -height * 2.5, 0]}>
+          <boxGeometry args={[0.1, 0.1, 0.1]} />
+        </Item>
+        {/* </RigidBody> */}
       </Physics>
     </>
   );

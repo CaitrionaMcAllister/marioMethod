@@ -1,9 +1,7 @@
 import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-// import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
-// import { BlobGeometry } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/BlobGeometry.js";
 
 function Objects() {
   const { height, width } = useThree((state) => state.viewport);

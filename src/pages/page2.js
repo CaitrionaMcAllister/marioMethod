@@ -1,13 +1,11 @@
 import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-// import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
-// import { BlobGeometry } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/BlobGeometry.js";
 
 function Page2() {
   const { height, width } = useThree((state) => state.viewport);
-  console.log(height, width);
+  // console.log(height, width);
   return (
     <>
       <pointLight color="#191970" position={[8, -25, 5]} intensity={100} />

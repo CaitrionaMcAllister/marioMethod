@@ -21,10 +21,9 @@
 // }));
 
 import "./style.css";
-import { useFrame, Canvas } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { ScrollControls, Scroll } from "@react-three/drei";
 import { Suspense } from "react";
-import * as THREE from "three";
 import { Html } from "./components/Html";
 import { Page1 } from "./pages/page1";
 import { Page2 } from "./pages/page2";
@@ -33,28 +32,28 @@ import { Page4 } from "./pages/page4";
 import { Background } from "./Background";
 
 function ScrollBasedAnimation() {
-  useFrame(({ mouse, camera }) => {
-    camera.position.x = THREE.MathUtils.lerp(
-      camera.position.x,
-      mouse.x * 0.5,
-      0.03
-    );
-    camera.position.y = THREE.MathUtils.lerp(
-      camera.position.y,
-      mouse.y * 0.8,
-      0.01
-    );
-    camera.position.z = THREE.MathUtils.lerp(
-      camera.position.z,
-      Math.max(4, Math.abs(mouse.x * mouse.y * 8)),
-      0.01
-    );
-    camera.rotation.y = THREE.MathUtils.lerp(
-      camera.rotation.y,
-      mouse.x * -Math.PI * 0.025,
-      0.001
-    );
-  });
+  // useFrame(({ mouse, camera }) => {
+  //   camera.position.x = THREE.MathUtils.lerp(
+  //     camera.position.x,
+  //     mouse.x * 0.5,
+  //     0.03
+  //   );
+  //   camera.position.y = THREE.MathUtils.lerp(
+  //     camera.position.y,
+  //     mouse.y * 0.8,
+  //     0.01
+  //   );
+  //   camera.position.z = THREE.MathUtils.lerp(
+  //     camera.position.z,
+  //     Math.max(4, Math.abs(mouse.x * mouse.y * 8)),
+  //     0.01
+  //   );
+  //   camera.rotation.y = THREE.MathUtils.lerp(
+  //     camera.rotation.y,
+  //     mouse.x * -Math.PI * 0.025,
+  //     0.001
+  //   );
+  // });
 
   return (
     <ScrollControls damping={4} pages={4}>
@@ -74,8 +73,8 @@ function ScrollBasedAnimation() {
 export default function App() {
   return (
     <Canvas dpr={[1, 2]}>
-      <ambientLight />
-      <directionalLight color="red" intensity={10} />
+      {/* <ambientLight /> */}
+      <ambientLight color="orange" intensity={1} />
       <Suspense fallback={null}>
         <ScrollBasedAnimation />
         <Background />

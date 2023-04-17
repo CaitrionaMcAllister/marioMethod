@@ -14,7 +14,7 @@ function Page3() {
         intensity={20}
       />
       <Item color="green" position={[-width / 5, -height * 2, -2]}>
-        <boxGeometry args={[1, 1, 1]} />
+        {/* <boxGeometry args={[1, 1, 1]} /> */}
       </Item>
     </>
   );

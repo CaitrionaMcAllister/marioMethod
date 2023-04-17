@@ -13,15 +13,15 @@ export function Html() {
       <h5
         style={{
           position: "absolute",
-          top: "50vh",
-          left: "50vw",
+          top: "10vh",
+          left: "20vw",
           transform: "translateX(-50%)",
-          color: "#4F7942",
+          color: "#D70040",
           margin: 0,
           size: "relative",
         }}
       >
-        Botanical Breakthroughs
+        The Mario Method
       </h5>
       <h1
         style={{
@@ -29,11 +29,11 @@ export function Html() {
           top: "140vh",
           left: "50vw",
           transform: "translateX(-65%)",
-          color: "#4682B4",
+          color: "#D70040",
           margin: 0,
         }}
       >
-        Page2
+        Clouds
       </h1>
       <h1
         style={{
@@ -41,11 +41,11 @@ export function Html() {
           top: "250vh",
           left: "50vw",
           transform: "translateX(-50%)",
-          color: "#4F7942",
+          color: "#D70040",
           margin: 0,
         }}
       >
-        Page3
+        Hills
       </h1>
       <h1
         style={{
@@ -53,7 +53,7 @@ export function Html() {
           top: "350vh",
           left: "50vw",
           transform: "translateX(-50%)",
-          color: "#4682B4",
+          color: "#D70040",
           margin: 0,
         }}
       >

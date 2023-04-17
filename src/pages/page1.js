@@ -1,22 +1,21 @@
 import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-// import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
-// import { BlobGeometry } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/BlobGeometry.js";
+import { QuestionBox } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/QuestionBox.js";
 
 function Page1() {
   const { height } = useThree((state) => state.viewport);
   return (
     <>
-      <pointLight color="#191970" position={[8, -25, 5]} intensity={100} />
+      {/* <pointLight color="red" position={[8, -25, 5]} intensity={10} />
       <pointLight
-        color="#191970"
+        color="red"
         position={[0, -height * 2.25, 5]}
-        intensity={20}
-      />
-      <Item color="green" position={[0, 0, 0]}>
-        <boxGeometry args={[1, 1, 1]} />
+        intensity={10}
+      /> */}
+      <Item position={[0, 0, 0]}>
+        <QuestionBox />
       </Item>
     </>
   );

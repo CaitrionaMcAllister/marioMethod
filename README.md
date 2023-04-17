@@ -16,6 +16,9 @@ About Botanical Breakthroughs:
 Credit & Inspiration:
 Colour Palette: [#4F7942,#4682B4,#191970,#00FF00,#009999]
 
+blood sweat and pixels
+the mario method
+
 TO DO:
 
 - add shapes
@@ -31,6 +34,7 @@ TO DO:
 - https://docs.pmnd.rs/react-three-fiber/getting-started/examples
 - https://sbcode.net/threejs/animate-on-scroll/
 - add tags and credit at bottom
+- add intro 'enter game' scene at begining
 
 About React:
 

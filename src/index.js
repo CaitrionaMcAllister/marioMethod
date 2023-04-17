@@ -52,7 +52,7 @@ root.render(
     <Overlay />
     <Logo
       style={{ position: "absolute", bottom: 40, left: 40, width: 30 }}
-      color="darkGreen"
+      color="red"
     />
   </>
 );
