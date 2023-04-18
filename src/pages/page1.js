@@ -2,7 +2,7 @@ import { useIntersect } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
-import { QuestionBox } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/QuestionBox.js";
+import { QuestionBox } from "../components/QuestionBox.js";
 
 function Page1() {
   // const { height } = useThree((state) => state.viewport);
