@@ -16,7 +16,7 @@ export function Html() {
           top: "10vh",
           left: "20vw",
           transform: "translateX(-50%)",
-          color: "#D70040",
+          color: "#FF3131",
           margin: 0,
           size: "relative",
         }}
@@ -29,7 +29,7 @@ export function Html() {
           top: "140vh",
           left: "50vw",
           transform: "translateX(-65%)",
-          color: "#D70040",
+          color: "#FF3131",
           margin: 0,
         }}
       >
@@ -41,7 +41,7 @@ export function Html() {
           top: "250vh",
           left: "50vw",
           transform: "translateX(-50%)",
-          color: "#D70040",
+          color: "#FF3131",
           margin: 0,
         }}
       >
@@ -53,7 +53,7 @@ export function Html() {
           top: "350vh",
           left: "50vw",
           transform: "translateX(-50%)",
-          color: "#D70040",
+          color: "#FF3131",
           margin: 0,
         }}
       >
