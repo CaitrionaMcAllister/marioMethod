@@ -5,7 +5,7 @@ import { Vector3 } from "three";
 import { Setup } from "../Setup";
 import { useTurntable } from "../useTurntable";
 
-import { RoundedBox } from "../../src";
+import { RoundedBox } from "..";
 
 export default {
   title: "Shapes/RoundedBox",
