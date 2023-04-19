@@ -1,4 +1,4 @@
-import { useIntersect } from "@react-three/drei";
+import { useIntersect, RoundedBox } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
@@ -29,6 +29,13 @@ function Page4() {
 
         <RigidBody type="fixed" restitution={0} friction={0.7}>
           <Item color="green" position={[width / 3, -height * 3.2, -1.5]}>
+            {/* hills */}
+            <RoundedBox args={[3, 9, 2]} radius={1.5}>
+              <meshLambertMaterial attach="material" color={"yellow"} />
+            </RoundedBox>
+            ;
+          </Item>
+          <Item color="green" position={[width / 3, -height * 3.4, -1.5]}>
             {/* cliff */}
             <Cliff />
           </Item>
@@ -39,8 +46,6 @@ function Page4() {
           <Item color="green" position={[-width / 3, -height * 2.8, -1]}>
             {/* pipe */}
             <Pipe />
-            {/* hills not working */}
-            <Hills />
           </Item>
         </RigidBody>
 
