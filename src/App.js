@@ -22,7 +22,7 @@
 
 import "./style.css";
 import { Canvas } from "@react-three/fiber";
-import { ScrollControls, Scroll } from "@react-three/drei";
+import { ScrollControls, Scroll, Sparkles } from "@react-three/drei";
 import { Suspense } from "react";
 import { Html } from "./components/Html";
 import { Page1 } from "./pages/page1";
@@ -73,9 +73,15 @@ function ScrollBasedAnimation() {
 export default function App() {
   return (
     <Canvas dpr={[1, 2]}>
-      {/* <ambientLight /> */}
       <ambientLight color="orange" intensity={1} />
       <Suspense fallback={null}>
+        <Sparkles
+          size={10}
+          scale={[10, 10, 10]}
+          position-y={1}
+          speed={0.2}
+          count={40}
+        />
         <ScrollBasedAnimation />
         <Background />
       </Suspense>

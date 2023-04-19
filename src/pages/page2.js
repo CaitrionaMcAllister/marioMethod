@@ -2,6 +2,7 @@ import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
+import { Banana } from "../components/banana.js";
 import { Mushroom } from "../components/mushroom.js";
 
 function Page2() {
@@ -10,11 +11,10 @@ function Page2() {
   return (
     <>
       <Item color="green" position={[width / 2, -height * 0.9, -1]}>
-        {/* <boxGeometry args={[1, 1, 1]} /> */}
         <Mushroom />
       </Item>
       <Item color="green" position={[width / 6, -height * 1.1, 0]}>
-        <boxGeometry args={[1, 1, 1]} />
+        <Banana />
       </Item>
       <Item color="green" position={[width / 2, -height * 1.3, -1]}>
         <boxGeometry args={[1, 1, 1]} />
@@ -37,7 +37,7 @@ function Item({ color, position, children }) {
     const scale = THREE.MathUtils.damp(
       ref.current.scale.x,
       visible.current ? 1.5 : 0.2,
-      5,
+      0,
       delta
     );
     ref.current.scale.set(scale, scale, scale);

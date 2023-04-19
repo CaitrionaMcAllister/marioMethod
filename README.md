@@ -1,13 +1,12 @@
-PUSH TEST PUSH TEST PUSH TEST
-
-Title: Botanical Breakthroughs
+Title: The Mario Method - Blood, Sweat and Pixels
 Creator: Caitriona McAllister
+Email: caitriona.mcallister1@gmail.com
 Course: UAL (LCC) Graphic and Media Design with Creative Computing
 ID: 19011624
 Project: SDP
-Focus: Creative, interactive web development in 3D
+Focus: Creative, interactive web development and gamification on digital platforms
 
-About Botanical Breakthroughs:
+About The Mario Method:
 -what
 -why
 -how
@@ -16,15 +15,9 @@ About Botanical Breakthroughs:
 Credit & Inspiration:
 Colour Palette: [#4F7942,#4682B4,#191970,#00FF00,#009999]
 
-blood sweat and pixels
-the mario method
-
 TO DO:
 
 - add shapes
-- add fixed camera movement (limited rotation, limited zoom in/out)
-  <!-- - add ground at bottom -->
-  <!-- - add basic scroll / layout -->
 - fix shape and scroll glitch
 - add animation
 - add interaction
@@ -35,6 +28,7 @@ TO DO:
 - https://sbcode.net/threejs/animate-on-scroll/
 - add tags and credit at bottom
 - add intro 'enter game' scene at begining
+- change favicon
 
 About React:
 

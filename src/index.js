@@ -20,7 +20,13 @@ function Overlay() {
     >
       <a
         href="https://pmnd.rs/"
-        style={{ position: "absolute", bottom: 40, left: 90, fontSize: "13px" }}
+        style={{
+          position: "absolute",
+          bottom: 40,
+          left: 90,
+          fontSize: "13px",
+          color: "red",
+        }}
       >
         pmnd.rs
         <br />
@@ -37,6 +43,7 @@ function Overlay() {
           bottom: 40,
           right: 40,
           fontSize: "13px",
+          color: "red",
         }}
       >
         07/04/2023

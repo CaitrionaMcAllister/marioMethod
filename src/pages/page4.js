@@ -4,34 +4,36 @@ import React, { useMemo, useRef } from "react";
 // import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
 import { RigidBody, Physics } from "@react-three/rapier";
+// import { Banana } from "../components/banana";
+import { Cliff } from "../components/cliff";
+import { Pipe } from "../components/pipe";
+
 // import { Ground } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/Ground.js";
 
 function Page4() {
+  <ambientLight color="white" intensity={10} />;
   const { height, width } = useThree((state) => state.viewport);
   return (
     <>
       <Physics>
         <RigidBody type="fixed" restitution={0} friction={0.7}>
-          <Item color="green" position={[width / 6, -height * 3.5, 0]}>
+          <Item color="darkgreen" position={[width / 6, -height * 3.5, 0]}>
             <boxGeometry args={[20, 5, 2]} />
+          </Item>
+          <Item color="blue" position={[width / 6, -height * 3.6, 0]}>
+            <boxGeometry args={[20, 5, 9]} />
+          </Item>
+          <Item position={[width / 6, -height * 2.95, 0]}>
+            {/* <Banana /> */}
           </Item>
         </RigidBody>
 
         <RigidBody type="fixed" restitution={0} friction={0.7}>
-          <Item color="green" position={[width / 1.3, -height * 3.4, -1.2]}>
-            <boxGeometry args={[3, 10, 1]} />
+          <Item color="green" position={[width / 3, -height * 3.2, -1.5]}>
+            <Cliff />
           </Item>
-          <Item color="green" position={[width / 3, -height * 3.5, -1.5]}>
-            <boxGeometry args={[2.8, 10, 1]} />
-          </Item>
-          <Item color="green" position={[width / 9, -height * 3, -1]}>
-            <boxGeometry args={[1, 10, 1]} />
-          </Item>
-          <Item color="green" position={[-width / 5, -height * 3.7, -1.3]}>
-            <boxGeometry args={[3, 10, 1]} />
-          </Item>
-          <Item color="green" position={[-width / 2, -height * 3.4, -1]}>
-            <boxGeometry args={[2, 10, 1]} />
+          <Item color="green" position={[-width / 3, -height * 2.8, -1]}>
+            <Pipe />
           </Item>
         </RigidBody>
 
@@ -61,7 +63,7 @@ function Item({ color, position, children }) {
     const scale = THREE.MathUtils.damp(
       ref.current.scale.x,
       visible.current ? 1.5 : 0.2,
-      5,
+      0,
       delta
     );
     ref.current.scale.set(scale, scale, scale);
