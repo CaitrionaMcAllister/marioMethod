@@ -2,7 +2,7 @@ import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
-import { GameBlock } from "../components/gameBlock";
+import { GameBlock } from "../components/GameBlock";
 
 function Page3() {
   const { height, width } = useThree((state) => state.viewport);

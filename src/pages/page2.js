@@ -2,8 +2,8 @@ import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
-import { Banana } from "../components/banana.js";
-import { Mushroom } from "../components/mushroom.js";
+import { Banana } from "../components/Banana.js";
+import { Mushroom } from "../components/Mushroom.js";
 
 function Page2() {
   const { height, width } = useThree((state) => state.viewport);

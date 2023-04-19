@@ -1,14 +1,10 @@
 import { useIntersect } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
-// import { Ground } from "./src/Ground.js";
 import * as THREE from "three";
 import { RigidBody, Physics } from "@react-three/rapier";
-// import { Banana } from "../components/banana";
-import { Cliff } from "../components/cliff";
-import { Pipe } from "../components/pipe";
-
-// import { Ground } from "/Users/caitrionamcallister/Documents/ualFinalYear/term2/BotanicalBreakthroughs/websiteCode/botanical_breakthroughs/src/components/Ground.js";
+import { Cliff } from "../components/Cliff";
+import { Pipe } from "../components/Pipe";
 
 function Page4() {
   <ambientLight color="white" intensity={10} />;
