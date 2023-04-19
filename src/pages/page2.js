@@ -3,6 +3,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { Banana } from "../components/Banana.js";
+import { FireFlower } from "../components/FireFlower.js";
 import { Mushroom } from "../components/Mushroom.js";
 
 function Page2() {
@@ -17,7 +18,7 @@ function Page2() {
         <Banana />
       </Item>
       <Item color="green" position={[width / 2, -height * 1.3, -1]}>
-        <boxGeometry args={[1, 1, 1]} />
+        <FireFlower />
       </Item>
     </>
   );
