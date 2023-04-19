@@ -5,6 +5,7 @@ import * as THREE from "three";
 import { RigidBody, Physics } from "@react-three/rapier";
 import { Cliff } from "../components/Cliff";
 import { Pipe } from "../components/Pipe";
+import { Hills } from "../components/RoundedHills";
 
 function Page4() {
   <ambientLight color="white" intensity={10} />;
@@ -14,9 +15,11 @@ function Page4() {
       <Physics>
         <RigidBody type="fixed" restitution={0} friction={0.7}>
           <Item color="darkgreen" position={[width / 6, -height * 3.5, 0]}>
+            {/* grass */}
             <boxGeometry args={[20, 5, 2]} />
           </Item>
           <Item color="blue" position={[width / 6, -height * 3.6, 0]}>
+            {/* ocean */}
             <boxGeometry args={[20, 5, 9]} />
           </Item>
           <Item position={[width / 6, -height * 2.95, 0]}>
@@ -26,10 +29,18 @@ function Page4() {
 
         <RigidBody type="fixed" restitution={0} friction={0.7}>
           <Item color="green" position={[width / 3, -height * 3.2, -1.5]}>
+            {/* cliff */}
             <Cliff />
           </Item>
           <Item color="green" position={[-width / 3, -height * 2.8, -1]}>
+            {/* rounded hills */}
+            <Hills />
+          </Item>
+          <Item color="green" position={[-width / 3, -height * 2.8, -1]}>
+            {/* pipe */}
             <Pipe />
+            {/* hills not working */}
+            <Hills />
           </Item>
         </RigidBody>
 

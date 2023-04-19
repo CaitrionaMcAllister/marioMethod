@@ -1,58 +1,11 @@
-import * as React from "react";
-import { withKnobs, number } from "@storybook/addon-knobs";
-import { Vector3 } from "three";
+import React from "react";
+import { RoundedBox } from "@react-three/drei";
 
-import { Setup } from "../Setup";
-import { useTurntable } from "../useTurntable";
-
-import { RoundedBox } from "..";
-
-export default {
-  title: "Shapes/RoundedBox",
-  component: RoundedBox,
-  decorators: [
-    withKnobs,
-    (storyFn) => (
-      <Setup cameraPosition={new Vector3(-30, 30, 30)}>{storyFn()}</Setup>
-    ),
-  ],
-};
-
-function RoundedBoxScene() {
-  const ref = useTurntable();
-
-  return (
-    <RoundedBox
-      ref={ref}
-      args={[number("width", 25), number("height", 25), number("depth", 25)]}
-      radius={number("radius", 1)}
-      smoothness={number("smoothness", 5)}
-    >
-      <meshPhongMaterial color="#f3f3f3" wireframe />
-    </RoundedBox>
-  );
+function Hills() {
+  <boxGeometry args={[5, 20, 2]} />;
+  <RoundedBox args={[3, 3, 0.25]} radius={0.1}>
+    <meshLambertMaterial attach="material" color={"grey"} />
+  </RoundedBox>;
 }
 
-export const RoundedBoxSt = () => <RoundedBoxScene />;
-RoundedBoxSt.storyName = "Default";
-
-function RoundedBoxScene2() {
-  const ref = useTurntable();
-
-  return (
-    <>
-      <spotLight position={[35, 35, 35]} intensity={2} />
-      <RoundedBox
-        ref={ref}
-        args={[number("width", 25), number("height", 25), number("depth", 25)]}
-        radius={number("radius", 8)}
-        smoothness={number("smoothness", 5)}
-      >
-        <meshPhongMaterial color="#f3f3f3" />
-      </RoundedBox>
-    </>
-  );
-}
-
-export const RoundedBoxSt2 = () => <RoundedBoxScene2 />;
-RoundedBoxSt2.storyName = "Solid";
+export { Hills };

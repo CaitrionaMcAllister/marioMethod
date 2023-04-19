@@ -26,7 +26,7 @@ function QuestionBox(props) {
             blur
             visibleEdgeColor="white"
             edgeStrength={100}
-            width={500}
+            width={100}
           />
         </EffectComposer>
         <mesh
@@ -45,25 +45,3 @@ function QuestionBox(props) {
 }
 
 export { QuestionBox };
-
-// export default function App() {
-//   return (
-//     <Canvas dpr={[1, 2]}>
-//       <ambientLight intensity={0.5} />
-//       <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-//       <pointLight position={[-10, -10, -10]} />
-//       <Selection>
-//         <EffectComposer multisampling={8} autoClear={false}>
-//           <Outline
-//             blur
-//             visibleEdgeColor="white"
-//             edgeStrength={100}
-//             width={500}
-//           />
-//         </EffectComposer>
-//         <Box position={[-1, 0, 0]} />
-//         <Box position={[1, 0, 0]} />
-//       </Selection>
-//     </Canvas>
-//   );
-// }
