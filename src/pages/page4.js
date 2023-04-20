@@ -5,7 +5,6 @@ import { Cliff } from "../components/Cliff";
 import { Pipe } from "../components/Pipe";
 import { Hills } from "../components/RoundedHills";
 import { Ocean } from "../components/Ocean";
-import { RoundedBox } from "@react-three/drei";
 
 function Page4() {
   <ambientLight color="white" intensity={10} />;
@@ -15,11 +14,10 @@ function Page4() {
     <>
       <Physics>
         <RigidBody type="fixed" restitution={0} friction={0.7}>
-          <RoundedBox />
-          <Cliff color="green" position={[width / 3, -height * 3.4, -1.5]} />
-          <Hills color="green" position={[-width / 3, -height * 2.8, -1]} />
           <Pipe position={[-width / 3, -height * 2, -1]} />
-          <Ocean color="blue" position={[0, -29, 0]} />
+          <Hills position={[0, -25, -8]} />
+          <Cliff color="green" />
+          <Ocean color="blue" position={[0, -27, 0]} />
         </RigidBody>
       </Physics>
     </>
