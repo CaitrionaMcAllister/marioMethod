@@ -4,7 +4,14 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 function Pipe() {
   const model = useLoader(GLTFLoader, "./pipe.glb");
   // console.log(model);
-  return <primitive object={model.scene} scale={3} rotation={[124, 0, 0]} />;
+  return (
+    <primitive
+      object={model.scene}
+      scale={3}
+      rotation={[124, 0, 0]}
+      position={[3, -22, -1]}
+    />
+  );
 }
 
 export { Pipe };
