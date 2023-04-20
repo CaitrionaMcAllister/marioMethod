@@ -43,9 +43,10 @@ function Page4() {
             {/* rounded hills */}
             <Hills />
           </Item>
-          <Item color="green" position={[-width / 3, -height * 2.8, -1]}>
+          <Item>
             {/* pipe */}
-            <Pipe />
+            <Pipe position={[-width / 3, -height * 2.8, -1]} />
+            <Pipe position={[-width / 3, -height * 2, -1]} />
           </Item>
         </RigidBody>
 
