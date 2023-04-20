@@ -16,7 +16,7 @@ function Page4() {
     <>
       <Physics>
         <RigidBody type="fixed" restitution={0} friction={0.7}>
-          <Hills position={[-5, -25, -8]} />
+          <Hills />
           {/* <Cliff /> */}
           <Ocean color="blue" position={[0, -27, 0]} />
           <Pipe />

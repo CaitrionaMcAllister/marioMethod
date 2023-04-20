@@ -7,7 +7,8 @@ function Ocean(props) {
   return (
     <mesh {...props} ref={ref} scale={1}>
       <boxGeometry args={[20, 5, 1]} />
-      <meshStandardMaterial color={"blue"} />
+      <meshPhongMaterial color="#0000ff" opacity={0.5} transparent />
+      {/* <meshStandardMaterial color={"blue"} /> */}
     </mesh>
   );
 }
