@@ -8,7 +8,7 @@ function Page3() {
   const { height, width } = useThree((state) => state.viewport);
   return (
     <>
-      <Item color="green" position={[-width / 5, -height * 2, -2]}>
+      <Item position={[-width / 5, -height * 2, -2]}>
         <GameBlock />
       </Item>
     </>

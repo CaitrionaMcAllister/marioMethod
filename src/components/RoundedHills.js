@@ -1,12 +1,16 @@
-import React from "react";
 import { RoundedBox } from "@react-three/drei";
+import React from "react";
+import { useThree } from "@react-three/fiber";
 
-function Hills() {
-  <boxGeometry args={[5, 20, 2]} />;
-  <RoundedBox args={[3, 3, 0.25]} radius={0.1}>
-    <meshLambertMaterial attach="material" color={"grey"} />
+function Hills(props) {
+  const { height, width } = useThree((state) => state.viewport);
+  <RoundedBox
+    args={[3, 9, 2]}
+    radius={1.5}
+    position={[width / 3, -height * 3.2, -1.5]}
+  >
+    <meshLambertMaterial attach="material" color={"yellow"} />
   </RoundedBox>;
-  // return<primitive object={model.scene} scale={0.07} />;
 }
 
 export { Hills };
