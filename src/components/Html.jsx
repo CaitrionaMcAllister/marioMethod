@@ -33,7 +33,7 @@ export function Html() {
           margin: 0,
         }}
       >
-        Clouds
+        Page2
       </h1>
       <h1
         style={{
@@ -45,7 +45,7 @@ export function Html() {
           margin: 0,
         }}
       >
-        Hills
+        Page3
       </h1>
       <h1
         style={{
@@ -57,7 +57,7 @@ export function Html() {
           margin: 0,
         }}
       >
-        Ground
+        Page4
       </h1>
     </div>
   );
