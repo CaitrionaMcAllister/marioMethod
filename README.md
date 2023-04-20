@@ -17,11 +17,11 @@ Colour Palette: [#4F7942,#4682B4,#191970,#00FF00,#009999]
 
 TO DO:
 
-- add shapes
 - fix shape and scroll glitch
 - add animation
 - add interaction
 - add day and night
+- make fish loop
 - https://drei.pmnd.rs/?path=/story/staging-sparkles--sparkles-story
 - https://github.com/pmndrs/drei#cloud
 - https://docs.pmnd.rs/react-three-fiber/getting-started/examples

@@ -7,13 +7,14 @@ function CheepCheep() {
   const model = useLoader(GLTFLoader, "./cheepCheep.glb");
   //   console.log(model);
   return (
-    <primitive object={model.scene} scale={0.0009} position={[0, -25.5, 1]} />
+    <primitive object={model.scene} scale={0.0009} position={[0, -25, 1]} />
   );
 }
 
 function Fish() {
   const ref = useRef();
-  useFrame(() => (ref.current.rotation.y += -0.005));
+  useFrame(() => (ref.current.position.x += -Math.sin(3.14)));
+  // -0.005 *
   return (
     <group ref={ref}>
       <CheepCheep position={[1, 1, 1]} />
