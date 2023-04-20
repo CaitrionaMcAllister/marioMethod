@@ -11,7 +11,7 @@ import {
 
 function QuestionBox(props) {
   const model = useLoader(GLTFLoader, "./questionBlock.glb");
-  console.log(model);
+  // console.log(model);
   const ref = useRef();
   const [hovered, hover] = useState(null);
   console.log(hovered);

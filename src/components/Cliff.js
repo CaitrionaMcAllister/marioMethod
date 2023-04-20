@@ -3,7 +3,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 function Cliff() {
   const model = useLoader(GLTFLoader, "./cliff.glb");
-  console.log(model);
+  // console.log(model);
   return <primitive object={model.scene} />;
 }
 
