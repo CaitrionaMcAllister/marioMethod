@@ -1,7 +1,7 @@
 // import { useThree } from "@react-three/fiber";
 import React from "react";
 import { RigidBody, Physics } from "@react-three/rapier";
-import { Cliff } from "../components/Cliff";
+// import { Cliff } from "../components/Cliff";
 import { Pipe } from "../components/Pipe";
 import { Hills } from "../components/RoundedHills";
 import { Ocean } from "../components/Ocean";
