@@ -10,8 +10,20 @@ function CheepCheep() {
       <Clone
         object={fish.scene}
         scale={0.0009}
-        rotation={[124, 0, 0]}
+        rotation={[0, 0, 0]}
         position={[0, -25, 1]}
+      />
+      <Clone
+        object={fish.scene}
+        scale={0.0005}
+        rotation={[0, 0, 0]}
+        position={[4, -25, 1]}
+      />
+      <Clone
+        object={fish.scene}
+        scale={0.001}
+        rotation={[0, 0, 0]}
+        position={[10, -25, 1]}
       />
     </>
   );
