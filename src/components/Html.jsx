@@ -5,16 +5,16 @@ export function Html() {
     <div
       style={{
         background: "white",
-        fontFamily: "sans-serif",
+        fontFamily: "Mario4",
         fontSize: "min(12vw, 86px)",
-        lineHeight: 0.75,
+        lineHeight: 1.5,
       }}
     >
       <h5
         style={{
           position: "absolute",
           top: "10vh",
-          left: "20vw",
+          left: "25vw",
           transform: "translateX(-50%)",
           color: "#FF3131",
           margin: 0,

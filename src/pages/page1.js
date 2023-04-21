@@ -5,8 +5,6 @@ import * as THREE from "three";
 import { QuestionBox } from "../components/QuestionBox.js";
 import { Coin } from "../components/Coin.js";
 
-// test test test
-
 function Page1() {
   // const { height } = useThree((state) => state.viewport);
   return (

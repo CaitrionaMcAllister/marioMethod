@@ -1,10 +1,44 @@
+@font-face {
+  /* colourful font */
+  font-family: "Mario1";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/mario-world-pixel-color-font/MarioWorldPixelColor-3zBwX.ttf);
+}
+@font-face {
+  /* graphic image font */
+  font-family: "Mario2";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/mushroom-kingdom-nbp-font/MushroomKingdomNbpRegular-RGGA.ttf);
+}
+@font-face {
+  /* graphic gameboy image font */
+  font-family: "Mario3";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/nintendo-dingbats-nbp-font/NintendoDingbatsNbpRegular-JE3n.ttf);
+}
+@font-face {
+  /* otuline graphic font */
+  font-family: "Mario4";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/super-mario-bros-font/SuperMarioBros-ov7d.ttf);
+}
+@font-face {
+  /* condensed font */
+  font-family: "Mario5";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/super-plumber-brothers-font/SuperPlumberBrothers-y00V.ttf);
+}
+@font-face {
+  /* chunky graphic font */
+  font-family: "Mario6";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/typeface-mario-world-pixel-font/TypefaceMarioWorldPixelFilledRegular-rgVMx.ttf);
+}
+@font-face {
+  /* outline graphic font */
+  font-family: "Mario7";
+  src: url(/Users/caitrionamcallister/Documents/ualFinalYear/term2/MarioMethod/websiteCode/marioMethod/src/fonts/typeface-mario-world-pixel-font/TypefaceMarioWorldPixelOutlineRegular-MVzKp.ttf);
+}
+
 html,
 body,
 #root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Mario7", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -18,7 +52,7 @@ body,
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+  font-family: "Mario7", sans-serif;
 }
 
 a {
@@ -30,6 +64,6 @@ a {
 body {
   overscroll-behavior: none;
   background: #efefef;
-  font-family: "Inter var", sans-serif;
+  font-family: "Mario7", sans-serif;
   cursor: url("../public/cursor32x32.png"), auto;
 }
