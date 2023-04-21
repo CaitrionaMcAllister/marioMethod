@@ -28,7 +28,7 @@ function Item({ color, position, children }) {
   const visible = useRef();
   const ref = useIntersect((isVisible) => (visible.current = isVisible));
   const [xRandomFactor, yRandomFactor] = useMemo(
-    () => [(0.5 - Math.random()) * 0.5, (0.5 - Math.random()) * 0.5],
+    () => [(0.5 - Math.random()) * 0.9, (0.5 - Math.random()) * 0.5],
     []
   );
   useFrame(({ clock }, delta) => {
