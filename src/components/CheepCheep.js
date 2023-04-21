@@ -1,13 +1,19 @@
-import { useLoader } from "@react-three/fiber";
-import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
+import { Clone, useGLTF } from "@react-three/drei";
 
 function CheepCheep() {
-  const model = useLoader(GLTFLoader, "./cheepCheep.glb");
-  //   console.log(model);
+  const fish = useGLTF("./cheepCheep.glb");
+
   return (
-    <primitive object={model.scene} scale={0.0009} position={[0, -25, 1]} />
+    <>
+      <Clone
+        object={fish.scene}
+        scale={0.0009}
+        rotation={[124, 0, 0]}
+        position={[0, -25, 1]}
+      />
+    </>
   );
 }
 
