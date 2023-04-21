@@ -30,7 +30,7 @@ function Pipe() {
         object={pipe1.scene}
         scale={3}
         rotation={[124, 0, 0]}
-        position={[3, -22, -1.5]}
+        position={[3, -22, -2.7]}
       />
     </>
   );
