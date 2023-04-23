@@ -7,7 +7,7 @@ export function Html() {
         background: "white",
         fontFamily: "Mario4",
         fontSize: "min(12vw, 86px)",
-        lineHeight: 1.5,
+        lineHeight: 1,
       }}
     >
       <h5
@@ -23,7 +23,7 @@ export function Html() {
       >
         The Mario Method
       </h5>
-      <h1
+      <p
         style={{
           position: "absolute",
           top: "140vh",
@@ -31,11 +31,14 @@ export function Html() {
           transform: "translateX(-65%)",
           color: "#FF3131",
           margin: 0,
+          size: "relative",
         }}
       >
         Page2
-      </h1>
-      <h1
+        {/* Page2: Parargraph here about gamification as a way to engage audiences
+        on digtial platforms like websites */}
+      </p>
+      <h8
         style={{
           position: "absolute",
           top: "250vh",
@@ -46,8 +49,9 @@ export function Html() {
         }}
       >
         Page3
-      </h1>
-      <h1
+        {/* Page3: Parargraph here about how this webpage has loads of hidden easter eggs that gamify it */}
+      </h8>
+      <h8
         style={{
           position: "absolute",
           top: "350vh",
@@ -58,7 +62,8 @@ export function Html() {
         }}
       >
         Page4
-      </h1>
+        {/* Page4: Parargraph here asking the viewer if they found all the easter eggs */}
+      </h8>
     </div>
   );
 }

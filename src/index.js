@@ -16,27 +16,45 @@ function Overlay() {
         pointerEvents: "none",
         width: "100%",
         height: "100%",
+        target: "_blank",
+        rel: "noopener noreferrer",
       }}
     >
       <a
         href="https://pmnd.rs/"
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           position: "absolute",
           bottom: 40,
           left: 90,
           fontSize: "13px",
           color: "red",
+          target: "_blank",
+          rel: "noopener noreferrer",
         }}
       >
         pmnd.rs
         <br />
         dev collective
       </a>
-      <div
-        style={{ position: "absolute", top: 40, left: 40, fontSize: "13px" }}
+      <a
+        href="https://www.instagram.com/catzcollective/"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        C.Mc —
-      </div>
+        <div
+          style={{
+            position: "absolute",
+            top: 40,
+            left: 40,
+            fontSize: "13px",
+          }}
+        >
+          C.Mc —
+        </div>
+      </a>
+
       <div
         style={{
           position: "absolute",

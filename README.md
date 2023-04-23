@@ -19,7 +19,7 @@ https://www.mariouniverse.com
 
 TO DO:
 
-- add animation
+- add coin clicker
 - add interaction
 - add day and night
 - make fish loop
