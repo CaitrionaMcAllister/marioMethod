@@ -66,6 +66,17 @@ function Overlay() {
       >
         07/04/2023
       </div>
+      <div
+        style={{
+          position: "absolute",
+          top: 40,
+          right: 40,
+          fontSize: "13px",
+          color: "red",
+        }}
+      >
+        Coin Count:
+      </div>
     </div>
   );
 }

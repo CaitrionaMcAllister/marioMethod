@@ -39,7 +39,14 @@ function QuestionBox(props) {
           // scale={clicked ? 0.5 : 1}
           // onClick={(event) => click(!clicked)}
         >
-          <primitive object={model.scene} scale={2} />
+          <primitive
+            object={model.scene}
+            scale={2}
+            onClick={(event) => {
+              console.log("working");
+              event.stopPropagation();
+            }}
+          />
 
           <meshStandardMaterial color="orange" />
         </mesh>
