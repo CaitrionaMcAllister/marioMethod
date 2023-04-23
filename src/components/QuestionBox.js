@@ -14,6 +14,8 @@ function QuestionBox(props) {
   // console.log(model);
   const ref = useRef();
   const [hovered, hover] = useState(null);
+  const [clicked, click] = useState(false);
+
   console.log(hovered);
   useFrame(
     (state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta)
@@ -34,6 +36,8 @@ function QuestionBox(props) {
           {...props}
           onPointerOver={() => hover(true)}
           onPointerOut={() => hover(false)}
+          // scale={clicked ? 0.5 : 1}
+          // onClick={(event) => click(!clicked)}
         >
           <primitive object={model.scene} scale={2} />
 

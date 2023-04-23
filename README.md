@@ -15,18 +15,19 @@ About The Mario Method:
 -where (responsove design but focused on web and screen)
 
 Credit & Inspiration:
-https://www.mariouniverse.com
 
-TO DO:
-
-- add coin clicker
-- add interaction
-- add day and night
-- make fish loop
+- https://www.mariouniverse.com
 - https://drei.pmnd.rs/?path=/story/staging-sparkles--sparkles-story
 - https://github.com/pmndrs/drei#cloud
 - https://docs.pmnd.rs/react-three-fiber/getting-started/examples
 - https://sbcode.net/threejs/animate-on-scroll/
+
+TO DO:
+
+- add coin clicker
+- add hidden question box interaction
+- make fish loop
+- add day and night
 - add tags and credit at bottom
 - add intro 'enter game' scene at begining
 - change favicon
