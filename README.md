@@ -15,11 +15,10 @@ About The Mario Method:
 -where (responsove design but focused on web and screen)
 
 Credit & Inspiration:
-Colour Palette: [#4F7942,#4682B4,#191970,#00FF00,#009999]
+https://www.mariouniverse.com
 
 TO DO:
 
-- fix shape and scroll glitch
 - add animation
 - add interaction
 - add day and night
