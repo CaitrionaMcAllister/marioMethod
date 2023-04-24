@@ -6,6 +6,15 @@ function Hills(props) {
   const ref = useRef();
   return (
     <mesh {...props} ref={ref} scale={1}>
+      <RoundedBox args={[3, 15, 3]} radius={1.5} position={[-25, -29, -8]}>
+        <meshStandardMaterial color={"pink"} />
+      </RoundedBox>
+      <RoundedBox args={[3, 15, 3]} radius={1.5} position={[-23, -30, -5]}>
+        <meshStandardMaterial color={"orange"} />
+      </RoundedBox>
+      <RoundedBox args={[3, 15, 3]} radius={1.5} position={[-20, -27, -9]}>
+        <meshStandardMaterial color={"yellow"} />
+      </RoundedBox>
       <RoundedBox args={[3, 15, 3]} radius={1.5} position={[-16, -27, -8]}>
         <meshStandardMaterial color={"red"} />
       </RoundedBox>
@@ -47,6 +56,12 @@ function Hills(props) {
       </RoundedBox>
       <RoundedBox args={[3, 15, 3]} radius={1.5} position={[16, -27, -8]}>
         <meshStandardMaterial color={"red"} />
+      </RoundedBox>
+      <RoundedBox args={[3, 15, 3]} radius={1.5} position={[20, -25, -5]}>
+        <meshStandardMaterial color={"yellow"} />
+      </RoundedBox>
+      <RoundedBox args={[3, 15, 3]} radius={1.5} position={[18, -29, -7]}>
+        <meshStandardMaterial color={"pink"} />
       </RoundedBox>
       ;
     </mesh>

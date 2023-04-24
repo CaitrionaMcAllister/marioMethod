@@ -12,7 +12,13 @@ function Pipe() {
         object={pipe1.scene}
         scale={3}
         rotation={[124, 0, 0]}
-        position={[-6, -22, -3]}
+        position={[-13, -22, -2.7]}
+      />
+      <Clone
+        object={pipe1.scene}
+        scale={3}
+        rotation={[124, 0, 0]}
+        position={[-6, -22, -2.7]}
       />
       <Clone
         object={pipe1.scene}
@@ -31,6 +37,12 @@ function Pipe() {
         scale={3}
         rotation={[124, 0, 0]}
         position={[3, -22, -2.7]}
+      />
+      <Clone
+        object={pipe1.scene}
+        scale={3}
+        rotation={[124, 0, 0]}
+        position={[14, -22, -2.7]}
       />
     </>
   );

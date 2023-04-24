@@ -2,8 +2,8 @@ import { Logo } from "@pmndrs/branding";
 import "./style.css";
 import ReactDOM from "react-dom/client";
 import App from "./App.js";
-import { Overlay } from "./Overlay.js";
 import { CoinCounter } from "./CoinCounter.js";
+import { Overlay } from "./Overlay.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
