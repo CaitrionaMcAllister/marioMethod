@@ -3,7 +3,7 @@ import { useState } from "react";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 function Banana() {
-  const [hover] = useState(false);
+  // const [hover] = useState(false);
   const [clicked, click] = useState(false);
 
   const model = useLoader(GLTFLoader, "./banana.glb");
@@ -13,8 +13,8 @@ function Banana() {
       object={model.scene}
       scale={clicked ? 0.002 : 0.001}
       onClick={(event) => click(!clicked)}
-      onPointerOver={(event) => hover(true)}
-      onPointerOut={(event) => hover(false)}
+      // onPointerOver={(event) => hover(true)}
+      // onPointerOut={(event) => hover(false)}
     />
   );
 }

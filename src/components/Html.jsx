@@ -38,7 +38,7 @@ export function Html() {
         {/* Page2: Parargraph here about gamification as a way to engage audiences
         on digtial platforms like websites */}
       </p>
-      <h8
+      <h6
         style={{
           position: "absolute",
           top: "250vh",
@@ -50,8 +50,8 @@ export function Html() {
       >
         Page3
         {/* Page3: Parargraph here about how this webpage has loads of hidden easter eggs that gamify it */}
-      </h8>
-      <h8
+      </h6>
+      <h6
         style={{
           position: "absolute",
           top: "350vh",
@@ -63,7 +63,7 @@ export function Html() {
       >
         Page4
         {/* Page4: Parargraph here asking the viewer if they found all the easter eggs */}
-      </h8>
+      </h6>
     </div>
   );
 }

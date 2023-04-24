@@ -30,6 +30,7 @@ import { Page2 } from "./pages/page2";
 import { Page3 } from "./pages/page3";
 import { Page4 } from "./pages/page4";
 import { Background } from "./Background";
+// import CoinCounter from "./CoinCounter.jsx";
 
 function ScrollBasedAnimation() {
   // useFrame(({ mouse, camera }) => {
@@ -65,6 +66,7 @@ function ScrollBasedAnimation() {
       </Scroll>
       <Scroll html>
         <Html />
+        {/* <CoinCounter clickersCount={1} /> */}
       </Scroll>
     </ScrollControls>
   );
