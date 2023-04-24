@@ -1,5 +1,8 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
+import { OrbitControls } from "@react-three/drei";
+import "./style2.css";
+import { Arcade } from "./components/Arcade";
 
 export default function EnterPage() {
   return (
@@ -14,9 +17,24 @@ export default function EnterPage() {
       }}
     >
       <ambientLight color="pink" intensity={1} />
+
+      <OrbitControls makeDefault />
+      <mesh
+        receiveShadow
+        position-y={-2}
+        rotation-x={-Math.PI * 0.5}
+        scale={10}
+      >
+        <planeGeometry />
+        <meshStandardMaterial color={"red"} />
+      </mesh>
+
+      <Arcade />
+
+      <directionalLight castShadow position={[1, 2, 3]} intensity={1.5} />
       <Suspense fallback={null}>
-        <ScrollBasedAnimation />
-        <Background />
+        {/* <ScrollBasedAnimation /> */}
+        {/* <Background /> */}
       </Suspense>
     </Canvas>
   );
