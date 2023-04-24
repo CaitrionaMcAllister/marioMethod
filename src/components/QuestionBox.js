@@ -16,7 +16,6 @@ function QuestionBox(props) {
   const [hovered, hover] = useState(null);
   const [clicked, click] = useState(false);
 
-  // console.log(hovered);
   useFrame(
     (state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta)
   );

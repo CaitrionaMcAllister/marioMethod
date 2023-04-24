@@ -18,7 +18,7 @@ function Grass(props) {
 
   return (
     <mesh {...props} ref={ref} scale={1}>
-      <boxGeometry args={[20, 5, 1]} />
+      <boxGeometry args={[30, 5, 1]} />
       {/* <meshStandardMaterial {...material} /> */}
       <meshStandardMaterial color={"green"} />
     </mesh>

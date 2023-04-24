@@ -36,8 +36,6 @@ function Fish() {
   return (
     <group ref={ref}>
       <CheepCheep position={[1, 1, 1]} />
-      {/* <CheepCheep position={[1, 3, 1]} />
-      <CheepCheep position={[2, 0, 1]} /> */}
     </group>
   );
 }

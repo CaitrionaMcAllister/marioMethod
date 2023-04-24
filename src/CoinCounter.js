@@ -1,5 +1,4 @@
 import "./style.css";
-import { Background } from "./Background";
 
 // import { useState } from "react";
 
