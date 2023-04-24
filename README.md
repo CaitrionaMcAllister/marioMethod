@@ -30,6 +30,7 @@ TO DO:
 - add day and night
 - add tags and credit at bottom
 - add intro 'enter game' scene at begining
+- add loading icon
 - change favicon
 
 About React:
