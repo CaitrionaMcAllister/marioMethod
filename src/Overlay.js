@@ -1,6 +1,9 @@
 import "./style.css";
+// import { QuestionBox } from "./components/QuestionBox";
 
 function Overlay() {
+  let coinCount = 10;
+
   return (
     <div
       style={{
@@ -69,7 +72,8 @@ function Overlay() {
           color: "red",
         }}
       >
-        Coin Count:
+        Coin Count: {coinCount}
+        {/* <button onClick={buttonClick}>Click here</button> */}
       </div>
     </div>
   );
