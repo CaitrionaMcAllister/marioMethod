@@ -1,16 +1,16 @@
 import { Logo } from "@pmndrs/branding";
 import "./style.css";
 import ReactDOM from "react-dom/client";
-// import App from "./App.js";
+import App from "./App.js";
 import { CoinCounter } from "./CoinCounter.js";
 import { Overlay } from "./Overlay.js";
-import EnterPage from "./Enter.js";
+// import EnterPage from "./Enter.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <App /> */}
-    <EnterPage />
+    <App />
+    {/* <EnterPage /> */}
     <Overlay />
     <CoinCounter />
     <Logo

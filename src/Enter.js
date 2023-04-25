@@ -8,6 +8,7 @@ import {
 } from "@react-three/drei";
 import "./style2.css";
 import { Arcade } from "./components/Arcade";
+import { Screen } from "./components/Screen";
 
 export default function EnterPage() {
   return (
@@ -18,8 +19,14 @@ export default function EnterPage() {
         fov: 45,
         near: 0.1,
         far: 200,
-        position: [-4, 3, 6],
+        position: [0, 2, 1.9],
       }}
+      //   camera={{
+      //     fov: 45,
+      //     near: 0.1,
+      //     far: 200,
+      //     position: [-4, 3, 6],
+      //   }}
     >
       <color attach="background" args={["hotpink"]} />
       <Environment files="https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/industrial_workshop_foundry_1k.hdr" />
@@ -51,6 +58,7 @@ export default function EnterPage() {
       </mesh>
 
       <Arcade />
+      <Screen />
 
       <directionalLight castShadow position={[1, 2, 3]} intensity={1.5} />
       <Suspense fallback={null}>
