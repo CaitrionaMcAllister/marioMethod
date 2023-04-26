@@ -13,7 +13,7 @@ function ScrollBasedAnimation() {
   return (
     <ScrollControls damping={4} pages={4}>
       <Scroll>
-        <Page1 />
+        <Page1 />/
         <Page2 />
         <Page3 />
         <Page4 />
