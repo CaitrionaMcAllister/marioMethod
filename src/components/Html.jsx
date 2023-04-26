@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Html() {
+export function HtmlOverlay() {
   return (
     <div
       style={{
