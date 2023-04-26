@@ -15,6 +15,7 @@ function QuestionBox(props) {
   const ref = useRef();
   const [hovered, hover] = useState(null);
   const [clicked, click] = useState(false);
+  const [count, setCount] = useState(0);
 
   useFrame(
     (state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta)
@@ -41,7 +42,8 @@ function QuestionBox(props) {
             object={model.scene}
             scale={2}
             onClick={(event) => {
-              console.log("count working");
+              console.log("count", count);
+              setCount(count + 1);
               event.stopPropagation();
             }}
           />

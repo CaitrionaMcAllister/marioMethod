@@ -1,6 +1,8 @@
 import "./style.css";
 
 function Overlay() {
+  let coinCount = 10;
+
   return (
     <div
       style={{
@@ -59,6 +61,18 @@ function Overlay() {
         }}
       >
         07/04/2023
+      </div>
+      <div
+        style={{
+          position: "absolute",
+          top: 40,
+          right: 40,
+          fontSize: "13px",
+          color: "red",
+        }}
+      >
+        Coin Count: {coinCount}
+        {/* <button onClick={buttonClick}>Click here</button> */}
       </div>
     </div>
   );
