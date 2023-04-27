@@ -10,12 +10,18 @@ import {
 } from "@react-three/postprocessing";
 
 function QuestionBox(props) {
+  // const { setCounter, counter } = props;
+  const { setCounter, counter } = props;
   const model = useLoader(GLTFLoader, "./questionBlock.glb");
   // console.log(model);
   const ref = useRef();
   const [hovered, hover] = useState(null);
   const [clicked, click] = useState(false);
   const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    if (counter && setCounter) setCounter(counter + 1);
+  };
 
   useFrame(
     (state, delta) => (ref.current.rotation.x = ref.current.rotation.y += delta)
@@ -36,16 +42,17 @@ function QuestionBox(props) {
           {...props}
           onPointerOver={() => hover(true)}
           onPointerOut={() => hover(false)}
-          onClick={(event) => click(!clicked)}
+          // onClick={(event) => click(!clicked)}
+          onClick={() => handleClick()}
         >
           <primitive
             object={model.scene}
-            scale={2}
-            onClick={(event) => {
-              console.log("count", count);
-              setCount(count + 1);
-              event.stopPropagation();
-            }}
+            scale={3}
+            // onClick={(event) => {
+            //   console.log("count", count);
+            //   setCount(count + 1);
+            //   event.stopPropagation();
+            // }}
           />
 
           <meshStandardMaterial color="orange" />

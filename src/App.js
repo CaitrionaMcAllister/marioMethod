@@ -18,14 +18,51 @@ import { QuestionBox } from "./components/QuestionBox";
 
 import { useState } from "react";
 
-function ScrollBasedAnimation() {
+// function CoinCounter() {
+//   const [counter, setCounter] = useState(0);
+//   const [counter2, setCounter2] = useState(0);
+//   return (
+//     <Canvas>
+//       <Html fullscreen>
+//         <span style={{ color: "red", fontSize: "3rem" }}>{counter}</span>
+//         <br />
+//         <span style={{ color: "blue", fontSize: "3rem" }}>{counter2}</span>
+//       </Html>
+//       <Sphere
+//         position-x={-1.5}
+//         onClick={() => {
+//           setCounter(counter + 1);
+//         }}
+//       >
+//         <meshStandardMaterial color="red" />
+//       </Sphere>
+
+//       <Sphere
+//         position-x={1.5}
+//         onClick={() => {
+//           setCounter2(counter2 + 1);
+//         }}
+//       >
+//         <meshStandardMaterial color="blue" />
+//       </Sphere>
+
+//       <QuestionBox
+//         onClick={() => {
+//           setCounter2(counter2 + 1);
+//         }}
+//       ></QuestionBox>
+//     </Canvas>
+//   );
+// }
+
+function ScrollBasedAnimation({ counter, setCounter }) {
   return (
     <ScrollControls damping={4} pages={4}>
       <Scroll>
-        <Page1 />/
-        <Page2 />
-        <Page3 />
-        <Page4 />
+        <Page1 counter={counter} setCounter={setCounter} />
+        <Page2 counter={counter} setCounter={setCounter} />
+        <Page3 counter={counter} setCounter={setCounter} />
+        <Page4 counter={counter} setCounter={setCounter} />
       </Scroll>
       <Scroll html>
         <HtmlOverlay />
@@ -38,9 +75,10 @@ function ScrollBasedAnimation() {
 export default function App() {
   const [counter, setCounter] = useState(0);
   const [counter2, setCounter2] = useState(0);
-
   return (
     <Canvas dpr={[1, 2]}>
+      {/* <CoinCounter />
+       */}
       <Html fullscreen>
         <span style={{ color: "red", fontSize: "3rem" }}>{counter}</span>
         <br />
@@ -55,20 +93,16 @@ export default function App() {
         <meshStandardMaterial color="red" />
       </Sphere>
 
-      <Sphere
+      {/* <Sphere
         position-x={1.5}
         onClick={() => {
           setCounter2(counter2 + 1);
         }}
       >
         <meshStandardMaterial color="blue" />
-      </Sphere>
+      </Sphere> */}
 
-      <QuestionBox
-        onClick={() => {
-          setCounter2(counter2 + 1);
-        }}
-      ></QuestionBox>
+      {/* <QuestionBox setCounter={setCounter2} counter={counter2}></QuestionBox> */}
       <ambientLight color="orange" intensity={1} />
       <Suspense fallback={null}>
         <Sparkles
@@ -78,7 +112,7 @@ export default function App() {
           speed={0.2}
           count={40}
         />
-        <ScrollBasedAnimation />
+        <ScrollBasedAnimation setCounter={setCounter2} counter={counter2} />
         <Background />
       </Suspense>
     </Canvas>

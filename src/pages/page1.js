@@ -5,12 +5,15 @@ import * as THREE from "three";
 import { QuestionBox } from "../components/QuestionBox.js";
 import { Coin } from "../components/Coin.js";
 
-function Page1() {
-  // const { height } = useThree((state) => state.viewport);
+function Page1({ counter, setCounter }) {
   return (
     <>
       <Item>
-        <QuestionBox position={[0, 0, 0]} />
+        <QuestionBox
+          counter={counter}
+          setCounter={setCounter}
+          position={[0, 0, 0]}
+        />
       </Item>
       <Coin />
     </>
