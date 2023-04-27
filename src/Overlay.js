@@ -1,8 +1,7 @@
 import "./style.css";
 
-function Overlay() {
+function Overlay({ counter1, counter2 }) {
   let coinCount = 10;
-
   return (
     <div
       style={{
@@ -72,6 +71,9 @@ function Overlay() {
         }}
       >
         Coin Count: {coinCount}
+        <div style={{ color: "red", fontSize: "3rem" }}>{counter1}</div>
+        <br />
+        <div style={{ color: "blue", fontSize: "3rem" }}>{counter2}</div>
         {/* <button onClick={buttonClick}>Click here</button> */}
       </div>
     </div>

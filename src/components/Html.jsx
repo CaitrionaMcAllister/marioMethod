@@ -19,6 +19,8 @@ export function HtmlOverlay() {
           color: "#FF3131",
           margin: 0,
           size: "relative",
+          userSelect: "none",
+          pointerEvents: "none",
         }}
       >
         The Mario Method

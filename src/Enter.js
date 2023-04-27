@@ -6,7 +6,7 @@ import {
   RandomizedLight,
   Environment,
 } from "@react-three/drei";
-import "./style2.css";
+// import "./style2.css";
 import { Arcade } from "./components/Arcade";
 import { Screen } from "./components/Screen";
 

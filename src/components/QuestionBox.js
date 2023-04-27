@@ -20,7 +20,7 @@ function QuestionBox(props) {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
-    if (counter && setCounter) setCounter(counter + 1);
+    if (counter !== null && setCounter) setCounter(counter + 1);
   };
 
   useFrame(
@@ -47,7 +47,7 @@ function QuestionBox(props) {
         >
           <primitive
             object={model.scene}
-            scale={3}
+            scale={2}
             // onClick={(event) => {
             //   console.log("count", count);
             //   setCount(count + 1);
