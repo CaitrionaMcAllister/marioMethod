@@ -4,7 +4,7 @@ import { Text } from "@react-three/drei";
 import "./style.css";
 import { Arcade } from "./components/Arcade";
 import { Screen } from "./components/Screen";
-import { useSpring } from "@react-spring/web";
+import { useSpring, animated } from "@react-spring/web";
 
 function EnterButton() {
   return (

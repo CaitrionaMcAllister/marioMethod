@@ -2,6 +2,7 @@ import { Logo } from "@pmndrs/branding";
 import "./style.css";
 import ReactDOM from "react-dom/client";
 import App from "./App.js";
+// import App from "./CameraTest";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
