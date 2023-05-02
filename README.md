@@ -25,12 +25,12 @@ Credit & Inspiration:
 TO DO:
 
 <!-- - add coin clicker -->
+<!-- - add hidden question box interaction -->
 
-- add hidden question box interaction
-- make fish loop
-- add day and night
-- add tags and credit at bottom
 - add intro 'enter game' scene at begining
+- make fish loop
+- add day and night button
+- add tags and credit at bottom
 - add loading icon
 - change favicon
 
