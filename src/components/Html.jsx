@@ -25,10 +25,10 @@ export function HtmlOverlay() {
       >
         The Mario Method
       </h5>
-      <p
+      <h6
         style={{
           position: "absolute",
-          top: "140vh",
+          top: "120vh",
           left: "50vw",
           transform: "translateX(-65%)",
           color: "#FF3131",
@@ -36,10 +36,10 @@ export function HtmlOverlay() {
           size: "relative",
         }}
       >
-        Page2
+        Text Here
         {/* Page2: Parargraph here about gamification as a way to engage audiences
         on digtial platforms like websites */}
-      </p>
+      </h6>
       <h6
         style={{
           position: "absolute",
@@ -50,7 +50,7 @@ export function HtmlOverlay() {
           margin: 0,
         }}
       >
-        Page3
+        Text Here
         {/* Page3: Parargraph here about how this webpage has loads of hidden easter eggs that gamify it */}
       </h6>
       <h6
@@ -63,7 +63,7 @@ export function HtmlOverlay() {
           margin: 0,
         }}
       >
-        Page4
+        Text Here
         {/* Page4: Parargraph here asking the viewer if they found all the easter eggs */}
       </h6>
     </div>

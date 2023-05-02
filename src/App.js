@@ -1,12 +1,6 @@
 import "./style.css";
 import { Canvas } from "@react-three/fiber";
-import {
-  Html,
-  Sphere,
-  ScrollControls,
-  Scroll,
-  Sparkles,
-} from "@react-three/drei";
+import { ScrollControls, Scroll, Sparkles } from "@react-three/drei";
 import React, { Suspense } from "react";
 import { HtmlOverlay } from "./components/Html";
 import { Page1 } from "./pages/page1";
@@ -40,31 +34,6 @@ export default function App() {
   return (
     <>
       <Canvas dpr={[1, 2]}>
-        {/* <CoinCounter />
-         */}
-        {/* <Html fullscreen>
-          <span style={{ color: "red", fontSize: "3rem" }}>{counter}</span>
-          <br />
-          <span style={{ color: "blue", fontSize: "3rem" }}>{counter2}</span>
-        </Html> */}
-        {/* <Sphere
-        position-x={-1.5}
-        onClick={() => {
-          setCounter(counter + 1);
-        }}
-      >
-        <meshStandardMaterial color="red" />
-      </Sphere> */}
-
-        {/* <Sphere
-          position-x={1.5}
-          onClick={() => {
-            setCounter2(counter2 + 1);
-          }}
-        >
-          <meshStandardMaterial color="blue" />
-        </Sphere> */}
-
         <ambientLight color="orange" intensity={1} />
         <Suspense fallback={null}>
           <Sparkles

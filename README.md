@@ -24,7 +24,8 @@ Credit & Inspiration:
 
 TO DO:
 
-- add coin clicker
+<!-- - add coin clicker -->
+
 - add hidden question box interaction
 - make fish loop
 - add day and night

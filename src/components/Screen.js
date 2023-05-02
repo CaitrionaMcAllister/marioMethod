@@ -8,7 +8,7 @@ function Screen() {
     <primitive
       object={model.scene}
       scale={1.2}
-      position={[0, 0.59, 0]}
+      position={[0, 0.09, 0]}
       rotation={[-0.3, 0, 0]}
     />
   );
