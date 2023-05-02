@@ -7,10 +7,12 @@ import { Screen } from "./components/Screen";
 
 function EnterButton() {
   const [clicked, setClicked] = useState(false);
+
   <button type="button">ENTER!</button>;
 }
 
-export default function EnterPage() {
+export default function EnterPage({ entered, setEntered }) {
+  const display = entered ? "none" : "block";
   return (
     <Canvas
       dpr={[1, 2]}
@@ -21,8 +23,14 @@ export default function EnterPage() {
         far: 200,
         position: [3, 4, 6],
       }}
+      style={{
+        display: display,
+      }}
+      onClick={() => {
+        setEntered(true);
+      }}
     >
-      <EnterButton />
+      {/* <EnterButton /> */}
       <color attach="background" args={["blue"]} />
       <ambientLight color="pink" intensity={1} />
       {/* <OrbitControls makeDefault /> */}
