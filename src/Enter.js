@@ -7,9 +7,7 @@ import { Screen } from "./components/Screen";
 
 function EnterButton() {
   const [clicked, setClicked] = useState(false);
-  <button type="button" onclick="alert('working!')">
-    ENTER!
-  </button>;
+  <button type="button">ENTER!</button>;
 }
 
 export default function EnterPage() {
