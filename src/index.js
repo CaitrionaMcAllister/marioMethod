@@ -7,8 +7,8 @@ import EnterPage from "./Enter.js";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <App /> */}
-    <EnterPage />
+    <App />
+    {/* <EnterPage /> */}
     <Logo
       style={{ position: "absolute", bottom: 40, left: 40, width: 30 }}
       color="red"

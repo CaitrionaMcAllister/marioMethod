@@ -10,10 +10,8 @@ import {
 } from "@react-three/postprocessing";
 
 function QuestionBox(props) {
-  // const { setCounter, counter } = props;
   const { setCounter, counter } = props;
   const model = useLoader(GLTFLoader, "./questionBlock.glb");
-  // console.log(model);
   const ref = useRef();
   const [hovered, hover] = useState(null);
   const [clicked, click] = useState(false);
