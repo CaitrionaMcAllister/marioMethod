@@ -6,9 +6,29 @@ import * as THREE from "three";
 function CameraControls() {
   const { camera } = useThree();
   const [targetPosition, setTargetPosition] = useState(null);
+  const [spring, setSpring] = useSpring(() => ({ x: 0, y: 0, z: 0 }));
 
   const handleMove = (position) => {
     setTargetPosition(position);
+
+    // Animate camera position
+    const springConfig = { mass: 1, tension: 400, friction: 30 };
+    spring
+      .to({
+        value: {
+          x: position.x,
+          y: position.y,
+          z: position.z,
+        },
+        config: springConfig,
+        onFrame: ({ x, y, z }) => {
+          // const pos = from
+          //   .clone()
+          //   .add(dir.clone().normalize().multiplyScalar(value));
+          camera.position.set(x, y, z);
+        },
+      })
+      .start();
   };
 
   useFrame(() => {
@@ -20,22 +40,6 @@ function CameraControls() {
 
       // Set camera's target
       camera.lookAt(targetPosition);
-
-      // Animate camera position
-      const springConfig = { mass: 1, tension: 400, friction: 30 };
-      const [spring, setSpring] = useSpring(() => ({ value: 0 }));
-      spring
-        .to({
-          value: distance,
-          config: springConfig,
-          onFrame: ({ value }) => {
-            const pos = from
-              .clone()
-              .add(dir.clone().normalize().multiplyScalar(value));
-            camera.position.set(pos.x, pos.y, pos.z);
-          },
-        })
-        .start();
 
       // Reset target position
       setTargetPosition(null);
@@ -88,7 +92,14 @@ function Box() {
 
 function App() {
   return (
-    <Canvas>
+    <Canvas
+      camera={{
+        fov: 20,
+        near: 0.1,
+        far: 200,
+        position: [0, 0, 0],
+      }}
+    >
       <ambientLight intensity={0.5} />
       <pointLight position={[10, 10, 10]} />
       <Box />

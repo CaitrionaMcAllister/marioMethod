@@ -1,6 +1,11 @@
 import "./style.css";
 import { Canvas } from "@react-three/fiber";
-import { ScrollControls, Scroll, Sparkles } from "@react-three/drei";
+import {
+  ScrollControls,
+  Scroll,
+  Sparkles,
+  CameraShake,
+} from "@react-three/drei";
 import React, { Suspense, useState } from "react";
 import { HtmlOverlay } from "./components/Html";
 import { Page1 } from "./pages/page1";
@@ -31,10 +36,17 @@ export default function App() {
   const [counter, setCounter] = useState(0);
   const [counter2, setCounter2] = useState(0);
   const [entered, setEntered] = useState(false);
+  const [displayed, setDisplayed] = useState(true);
 
   return (
     <>
-      <EnterPage entered={entered} setEntered={setEntered} />
+      {displayed && (
+        <EnterPage
+          entered={entered}
+          setEntered={setEntered}
+          setDisplayed={setDisplayed}
+        />
+      )}
       <Canvas dpr={[1, 2]}>
         <ambientLight color="orange" intensity={1} />
         <Suspense fallback={null}>
