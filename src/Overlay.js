@@ -70,9 +70,10 @@ function Overlay({ counter1, counter2 }) {
           color: "red",
         }}
       >
-        Coin Count: {coinCount}
-        <div style={{ color: "red", fontSize: "3rem" }}>{counter1}</div>
-        <br />
+        Coin Count:
+        {/* {coinCount} */}
+        {/* <div style={{ color: "red", fontSize: "3rem" }}>{counter1}</div>
+        <br /> */}
         <div style={{ color: "blue", fontSize: "3rem" }}>{counter2}</div>
         {/* <button onClick={buttonClick}>Click here</button> */}
       </div>

@@ -15,7 +15,7 @@ function Page1({ counter, setCounter }) {
           position={[0, 0, 0]}
         />
       </Item>
-      <Coin />
+      {/* <Coin /> */}
     </>
   );
 }
