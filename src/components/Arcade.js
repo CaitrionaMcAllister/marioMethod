@@ -29,6 +29,8 @@ function Arcade({ entered, cameraPosition, onDone = () => false }) {
       current.y = lerp(current.y, finish.y, speed);
       current.z = lerp(current.z, finish.z, speed);
 
+      //opacity lerp
+
       camera.position.set(current.x, current.y, current.z);
       camera.lookAt(new THREE.Vector3(0, 0, 0));
 

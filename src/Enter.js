@@ -84,7 +84,7 @@ export default function EnterPage({ entered, setEntered, setDisplayed }) {
           entered={entered}
           cameraPosition={defaultCameraPosition}
         />
-        <Screen />
+        {/* <Screen /> */}
         {/* <CameraShake
           maxYaw={0.01}
           maxPitch={0.01}
