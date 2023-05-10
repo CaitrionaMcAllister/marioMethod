@@ -50,13 +50,13 @@ export default function EnterPage({ entered, setEntered, setDisplayed }) {
         <color attach="background" args={["blue"]} />
         <ambientLight color="pink" intensity={1} />
         {/* <OrbitControls makeDefault /> */}
-        <Image position={[1.2, 0, 0]} />
+        {/* <Image position={[1.2, 0, 0]} /> */}
         <Arcade
           onDone={() => setDisplayed(false)}
           entered={entered}
           cameraPosition={defaultCameraPosition}
         />
-        <Screen position={[0, 0, 0]} />
+        {/* <Screen position={[0, 0, 0]} /> */}
         {/* <CameraShake
           maxYaw={0.01}
           maxPitch={0.01}
