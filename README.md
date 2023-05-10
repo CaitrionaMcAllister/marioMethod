@@ -8,12 +8,6 @@ ID: 19011624
 Project: SDP
 Focus: Creative, interactive web development and gamification on digital platforms
 
-About The Mario Method:
--what
--why
--how
--where (responsove design but focused on web and screen)
-
 Credit & Inspiration:
 
 - https://www.mariouniverse.com
@@ -26,11 +20,11 @@ TO DO:
 
 <!-- - add coin clicker -->
 <!-- - add hidden question box interaction -->
+<!-- - add intro 'enter game' scene at begining -->
 
-- add intro 'enter game' scene at begining
 - make fish loop
 - add day and night button
-- add tags and credit at bottom
+<!-- - add tags and credit at bottom -->
 - add loading icon
 - change favicon
 
