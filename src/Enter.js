@@ -3,11 +3,12 @@ import { Canvas, useLoader } from "@react-three/fiber";
 // import { Text, CameraShake } from "@react-three/drei";
 import "./style.css";
 import { Arcade } from "./components/Arcade";
-import { Screen } from "./components/Screen2";
+// import { Screen } from "./components/Screen2";
 // import { useSpring, animated } from "@react-spring/web";
 import * as THREE from "three";
 import img from "./components/screen.png";
 
+// eslint-disable-next-line
 function Image() {
   const texture = useLoader(THREE.TextureLoader, img);
   return (
