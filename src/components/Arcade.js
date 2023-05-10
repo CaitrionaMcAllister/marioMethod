@@ -14,9 +14,11 @@ function Arcade({ entered, cameraPosition, onDone = () => false }) {
   // console.log(model);
 
   const { camera } = useThree();
+  // eslint-disable-next-line
   const [spring, setSpring] = useSpring(() => ({ x: 0, y: 0, z: 0 }));
 
   const handleMove = (position) => {
+    // eslint-disable-next-line
     let start = { ...cameraPosition };
     let current = { ...cameraPosition };
     let finish = { ...position };
@@ -57,6 +59,7 @@ function Arcade({ entered, cameraPosition, onDone = () => false }) {
         z: 0.5,
       });
     }
+    // eslint-disable-next-line
   }, [entered]);
 
   return (
