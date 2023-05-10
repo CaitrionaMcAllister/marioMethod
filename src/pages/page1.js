@@ -3,7 +3,7 @@ import { useFrame } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { QuestionBox } from "../components/QuestionBox.js";
-import { Coin } from "../components/Coin.js";
+// import { Coin } from "../components/Coin.js";
 
 function Page1({ counter, setCounter }) {
   return (

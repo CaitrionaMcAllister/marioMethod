@@ -6,7 +6,6 @@ export function HtmlOverlay() {
       style={{
         background: "white",
         fontFamily: "Mario4",
-        fontSize: "min(12vw, 86px)",
         lineHeight: 1,
       }}
     >
@@ -15,6 +14,7 @@ export function HtmlOverlay() {
           position: "absolute",
           top: "10vh",
           left: "25vw",
+          fontSize: "min(10vw, 80px)",
           transform: "translateX(-50%)",
           color: "#FF3131",
           margin: 0,
@@ -25,32 +25,45 @@ export function HtmlOverlay() {
       >
         The Mario Method
       </h5>
+      {/* <img
+        src="public/hand.gif"
+        alt="HTML5 Icon"
+        style="width:128px;height:128px;"
+      ></img> */}
       <h6
         style={{
           position: "absolute",
           top: "120vh",
-          left: "50vw",
+          left: "30vw",
+          fontSize: "min(3.5vw, 80px)",
           transform: "translateX(-65%)",
-          color: "#FF3131",
+          color: "#00a800",
           margin: 0,
           size: "relative",
+          textAlign: "center",
+          userSelect: "none",
+          pointerEvents: "none",
         }}
       >
-        Text Here
+        What if we could interact with digital platforms?
         {/* Page2: Parargraph here about gamification as a way to engage audiences
         on digtial platforms like websites */}
       </h6>
       <h6
         style={{
           position: "absolute",
-          top: "250vh",
+          top: "230vh",
           left: "50vw",
-          transform: "translateX(-50%)",
-          color: "#FF3131",
+          fontSize: "min(3.5vw, 80px)",
+          transform: "translateX(70%)",
+          color: "#00a800",
           margin: 0,
+          textAlign: "center",
+          userSelect: "none",
+          pointerEvents: "none",
         }}
       >
-        Text Here
+        What if websites were real spaces?
         {/* Page3: Parargraph here about how this webpage has loads of hidden easter eggs that gamify it */}
       </h6>
       <h6
@@ -58,12 +71,16 @@ export function HtmlOverlay() {
           position: "absolute",
           top: "350vh",
           left: "50vw",
+          fontSize: "min(3.5vw, 80px)",
           transform: "translateX(-50%)",
           color: "#FF3131",
           margin: 0,
+          textAlign: "center",
+          userSelect: "none",
+          pointerEvents: "none",
         }}
       >
-        Text Here
+        What if YOU entered the game...?
         {/* Page4: Parargraph here asking the viewer if they found all the easter eggs */}
       </h6>
     </div>
