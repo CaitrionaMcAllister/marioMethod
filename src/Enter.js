@@ -8,19 +8,19 @@ import { Screen } from "./components/Screen2";
 import * as THREE from "three";
 import img from "./components/screen.png";
 
-// function Image() {
-//   const texture = useLoader(THREE.TextureLoader, img);
-//   return (
-//     <mesh>
-//       <planeBufferGeometry
-//         attach="geometry"
-//         args={[1, 2]}
-//         position={[0, 0, 3]}
-//       />
-//       <meshBasicMaterial attach="material" map={texture} toneMapped={false} />
-//     </mesh>
-//   );
-// }
+function Image() {
+  const texture = useLoader(THREE.TextureLoader, img);
+  return (
+    <mesh>
+      <planeBufferGeometry
+        attach="geometry"
+        args={[1, 2]}
+        position={[0, 0, 3]}
+      />
+      <meshBasicMaterial attach="material" map={texture} toneMapped={false} />
+    </mesh>
+  );
+}
 
 export default function EnterPage({ entered, setEntered, setDisplayed }) {
   // eslint-disable-next-line
@@ -50,13 +50,13 @@ export default function EnterPage({ entered, setEntered, setDisplayed }) {
         <color attach="background" args={["blue"]} />
         <ambientLight color="pink" intensity={1} />
         {/* <OrbitControls makeDefault /> */}
-        {/* <Image position={[1.2, 0, 0]} /> */}
+        <Image position={[1.2, 0, 0]} />
         <Arcade
           onDone={() => setDisplayed(false)}
           entered={entered}
           cameraPosition={defaultCameraPosition}
         />
-        <Screen />
+        <Screen position={[0, 0, 0]} />
         {/* <CameraShake
           maxYaw={0.01}
           maxPitch={0.01}
